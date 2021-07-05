@@ -1,0 +1,17 @@
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown>.dropdown-toggle:active {
+  pointer-events: none;
+}
+.logo{
+  font-size: 2rem;
+  font-weight: 1000;
+}
+i{
+  font-size: 1.5rem;
+}
+.navbar-nav a{
+  font-size: 1.3rem;
+  font-weight: 400;
+}
