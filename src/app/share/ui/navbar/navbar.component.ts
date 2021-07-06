@@ -10,6 +10,14 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.addClass();
   }
-
+  addClass(): void{
+    // tslint:disable-next-line:only-arrow-functions typedef
+    window.addEventListener('scroll', function(){
+      const nav = document.querySelector('nav');
+      // @ts-ignore
+      nav.classList.toggle('sticky', window.scrollY > 100);
+    });
+  }
 }
