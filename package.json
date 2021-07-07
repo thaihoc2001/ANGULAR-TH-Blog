@@ -28,6 +28,8 @@
     "jquery": "^3.6.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
+    "ngx-page-scroll": "^7.0.5",
+    "ngx-page-scroll-core": "^7.0.5",
     "perfect-scrollbar": "^1.5.1",
     "popper.js": "^1.14.3",
     "rxjs": "~6.6.0",

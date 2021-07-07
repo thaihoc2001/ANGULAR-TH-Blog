@@ -20,4 +20,9 @@ export class NavbarComponent implements OnInit {
       nav.classList.toggle('sticky', window.scrollY > 100);
     });
   }
+
+  scrollCV(): void{
+    // @ts-ignore
+    document.getElementById('cv').scrollIntoView({behavior: 'smooth'});
+  }
 }
