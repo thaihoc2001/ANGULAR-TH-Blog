@@ -7,6 +7,7 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { WorkComponent } from './home/component/work/work.component';
 import { ContactComponent } from './home/component/contact/contact.component';
 import { TalkToMeComponent } from './home/component/talk-to-me/talk-to-me.component';
+import { WhoAmIComponent } from './home/component/who-am-i/who-am-i.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { TalkToMeComponent } from './home/component/talk-to-me/talk-to-me.compon
     HomeComponent,
     WorkComponent,
     ContactComponent,
-    TalkToMeComponent
+    TalkToMeComponent,
+    WhoAmIComponent
   ],
   imports: [
     CommonModule,
