@@ -21,7 +21,7 @@ i{
   font-size: 1.3rem;
   font-weight: 400;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 992px) {
   .sticky{
     width: 100%;
     height: 60px;
@@ -31,5 +31,21 @@ i{
   }
   .dropdown-menu{
     border: none;
+  }
+}
+@media only screen and (max-width: 992px){
+  .icon-logo{
+    display: none !important;
+  }
+  #navbarNavDropdown{
+    background-color: rgba(255,255,255,0.8);
+  }
+  #dropdownMenuButton{
+    background-color: rgba(255,255,255,0.1) !important;
+    border: none;
+    transition: 0.1ms;
+  }
+  a{
+    color: black !important;
   }
 }
