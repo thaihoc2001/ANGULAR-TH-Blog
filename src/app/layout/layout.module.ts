@@ -8,6 +8,9 @@ import { WorkComponent } from './home/component/work/work.component';
 import { ContactComponent } from './home/component/contact/contact.component';
 import { TalkToMeComponent } from './home/component/talk-to-me/talk-to-me.component';
 import { WhoAmIComponent } from './home/component/who-am-i/who-am-i.component';
+import { ScoreComponent } from './score/score.component';
+import { LoginComponent } from './login/login.component';
+import { SoundcloudComponent } from './soundcloud/soundcloud.component';
 
 
 @NgModule({
@@ -16,7 +19,10 @@ import { WhoAmIComponent } from './home/component/who-am-i/who-am-i.component';
     WorkComponent,
     ContactComponent,
     TalkToMeComponent,
-    WhoAmIComponent
+    WhoAmIComponent,
+    ScoreComponent,
+    LoginComponent,
+    SoundcloudComponent
   ],
   imports: [
     CommonModule,

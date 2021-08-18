@@ -3,11 +3,21 @@
         <a class="navbar-brand" href="#">
           <h1 class="logo mt-lg-1">THAI HOC</h1>
         </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" data-spy="affix" data-offset-top="700">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      data-spy="affix"
+      data-offset-top="700"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="icon-logo navbar-nav d-sm-flex mx-xl-2 col-md-4 col-lg-4 col-xl-5">
+      <ul class="icon-logo navbar-nav d-sm-flex mx-xl-2 col-lg-2 col-xl-3 col-xxl-4">
         <li class="nav-item active">
           <a class="nav-link" href="https://www.instagram.com/thaihoc2001/">
             <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -24,24 +34,32 @@
           </a>
         </li>
       </ul>
-      <ul class="navbar-nav mx-xxl-5 col-md-8 col-lg-8 col-xl-7">
-        <li class="nav-item active mx-lg-1">
-          <a class="nav-link" (click)="scrollTTM()" routerLink="/home">NÓI VỀ TÔI</a>
-        </li>
-        <li class="nav-item mx-lg-1">
-          <a class="nav-link" (click)="scrollCV()" routerLink="/home">CÔNG VIỆC</a>
-        </li>
+      <ul class="navbar-nav mx-xxl-6 col-lg-9 col-xl-9 col-xxl-8">
         <li class="nav-item mx-lg-1">
           <a class="nav-link" (click)="scrollWAI()" routerLink="/home">HỌC LÀ AI ?</a>
         </li>
+        <li class="nav-item mx-lg-1">
+          <a class="nav-link" (click)="scrollCV()" routerLink="/soundclound">SOUNDCLOUD</a>
+        </li>
+        <li class="nav-item active mx-lg-1">
+          <a class="nav-link" (click)="scrollTTM()" routerLink="/talk-to-me">NÓI VỚI TÔI</a>
+        </li>
         <li class="nav-item dropdown mx-lg-1">
-          <a class="nav-link dropdown-toggle" href="#"  data-target ="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-spy="affix" data-offset-top="700">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-target ="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            data-spy="affix"
+            data-offset-top="700"
+          >
             TÍNH NĂNG
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdownMenuButton">
-            <a class="dropdown-item" href="#" (click)="Loading()">ASOI</a>
-            <a class="dropdown-item" href="#" (click)="Loading()">Tool Đăng ký học phần</a>
-            <a class="dropdown-item" href="#" (click)="Loading()">Tính điểm trung bình IUH</a>
+            <a class="dropdown-item" routerLink="/score">Tính điểm IUH</a>
+            <a class="dropdown-item" routerLink="/login">Góc của Học</a>
           </div>
         </li>
         <li class="nav-item mx-lg-1">
