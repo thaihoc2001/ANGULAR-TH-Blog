@@ -28,6 +28,7 @@
     "jquery": "^3.6.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
+    "ngx-captcha": "^10.0.0",
     "ngx-page-scroll": "^7.0.5",
     "ngx-page-scroll-core": "^7.0.5",
     "perfect-scrollbar": "^1.5.1",

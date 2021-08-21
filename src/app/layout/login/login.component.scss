@@ -1,0 +1,22 @@
+form{
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+input{
+  border: none;
+  border-bottom: 1px solid #6c757d;
+}
+  ::placeholder {
+    color: black;
+    opacity: 0.8;
+  }
+@media screen and (max-width: 1300px){
+  form{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 992px){
+  form{
+    width: 80%;
+  }
+}

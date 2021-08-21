@@ -21,27 +21,27 @@ export class NavbarComponent implements OnInit {
     });
   }
 
-  scrollCV(): void{
-    // @ts-ignore
-    document.getElementById('cv').scrollIntoView({behavior: 'smooth'});
-  }
-
-  scrollContact(): void{
-    // @ts-ignore
-    document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
-  }
+  // scrollCV(): void{
+  //   // @ts-ignore
+  //   document.getElementById('cv').scrollIntoView({behavior: 'smooth'});
+  // }
+  //
+  // scrollContact(): void{
+  //   // @ts-ignore
+  //   document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+  // }
 
   Loading(): void{
     alert('Chức năng hiện tại đang trong giai đoạn phát triển. Tôi sẽ cố gắng hoàn thành 1 cách sớm nhất ! Xin cảm ơn');
   }
 
-  scrollWAI(): void{
-    // @ts-ignore
-    document.getElementById('wai').scrollIntoView({behavior: 'smooth'});
-  }
-
-  scrollTTM(): void {
-    // @ts-ignore
-    document.getElementById('ttm').scrollIntoView({behavior: 'smooth'});
-  }
+  // scrollWAI(): void{
+  //   // @ts-ignore
+  //   document.getElementById('wai').scrollIntoView({behavior: 'smooth'});
+  // }
+  //
+  // scrollTTM(): void {
+  //   // @ts-ignore
+  //   document.getElementById('ttm').scrollIntoView({behavior: 'smooth'});
+  // }
 }

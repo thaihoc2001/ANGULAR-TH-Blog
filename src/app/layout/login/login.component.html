@@ -1,1 +1,41 @@
-<p>login works!</p>
+<div class="container  d-flex justify-content-center">
+  <form name="formLogin" [formGroup]="infoFormLogin" (ngSubmit)="onSubmit()" class="p-5 my-5">
+    <div class="form-header text-center">
+      <img src="assets/img/avatar/logo-login-chuaedit.jpg" width="200">
+      <div>
+        <h1 class="fw-bolder text-uppercase">Private Login</h1>
+      </div>
+    </div>
+    <div class="reg-form form-group mt-4">
+      <input
+        class="form-control"
+        type = "text"
+        name="username"
+        formControlName="username"
+        required
+        placeholder="Tài khoản"
+        id="username"
+      >
+    </div>
+    <div class="reg-form form-group my-3">
+      <input
+        class="form-control"
+        type = "password"
+        name="password"
+        formControlName="password"
+        required
+        placeholder="Mật khẩu"
+        id="password"
+      >
+    </div>
+    <ngx-recaptcha2 #captchaElem
+                    [siteKey]="siteKey"
+                    formControlName="recaptcha">
+    </ngx-recaptcha2>
+    <div class="text-center">
+      <button class="btn btn-dark mt-3">
+        Đăng nhập
+      </button>
+    </div>
+  </form>
+</div>
