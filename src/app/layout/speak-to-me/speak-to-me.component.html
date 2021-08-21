@@ -1,9 +1,23 @@
 <div class="container">
   <div class="d-flex">
-    <div class="col-8">
-      <router-outlet></router-outlet>
+    <div class="col-lg-8 mt-5">
+      <div class="text-center">
+        <h5 class="text-uppercase fw-light" style="font-size: 2.5rem">Nói với tôi</h5>
+        <i class="fw-light">Hãy nói với tôi những điều mà bạn thích hoặc chưa thích ở bản thân tôi, tôi sẽ ghi nhận và sửa đổi nếu nó hợp lý xin cảm ơn !</i>
+      </div>
+      <div class="">
+        <div class="d-flex w-100 text-center mt-5 pb-3" style="border-bottom: 1px solid black">
+          <div class="w-50">
+            <a routerLink="/speak-to-me/public-confide" class="fa-2x fw-light text-decoration-none text-dark">Public</a>
+          </div>
+          <div class="w-50">
+            <a routerLink="/speak-to-me/private-confide" class="fa-2x fw-light text-decoration-none text-dark">Private</a>
+          </div>
+        </div>
+        <router-outlet></router-outlet>
+      </div>
     </div>
-    <div class="col-4">
+    <div class="col-lg-4">
       <app-aside></app-aside>
     </div>
   </div>
