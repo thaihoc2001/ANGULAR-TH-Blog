@@ -12,4 +12,7 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(): void{
+    alert('Chức năng hiện tại đang trong giai đoạn phát triển, chúng tôi sẽ cố gắng hoàn thiện sớm nhất xin cảm ơn !')
+  }
 }

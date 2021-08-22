@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { NgxCaptchaModule } from 'ngx-captcha';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -16,6 +17,7 @@ import { NgxCaptchaModule } from 'ngx-captcha';
         NgxPageScrollCoreModule,
         NgxPageScrollModule,
         NgxCaptchaModule,
+        HttpClientModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

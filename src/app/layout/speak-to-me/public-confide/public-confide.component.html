@@ -1,20 +1,18 @@
 <div class="container mb-5">
   <div class="my-3" style="border-bottom: 1px solid black">
-    <div class="mb-5">
+    <div class="mb-5" *ngFor="let item of listConfide">
       <div class="d-flex">
         <div>
           <img src="assets/img/avatar/avatar-header-2.jpg" width="50" height="50" style="border-radius: 100px">
         </div>
         <div class="mx-2">
-          <p class="my-auto m-0">Thái Học</p>
-          <p>2 giờ trước</p>
+          <p class="my-auto m-0">{{item.name}}</p>
+          <p>{{item.sendDate}}</p>
         </div>
       </div>
       <div class="content-message">
         <p>
-          Nếu bạn sử dụng một ứng dụng như SoundCloud, thì thay vì chỉ thích mọi bài hát và để chúng ngồi trong phần
-          "Các bản nhạc được yêu thích" được hiển thị công khai, tại sao bạn không sắp xếp một số mục yêu thích đó vào danh sách phát?
-          Ví dụ, hãy xem danh sách phát "Đã bắt đầu trên Spotify" - đó là một cách tuyệt vời để duy trì các giai điệu.
+          {{item.message}}
         </p>
       </div>
     </div>
