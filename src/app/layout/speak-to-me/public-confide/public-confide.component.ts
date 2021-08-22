@@ -29,7 +29,6 @@ export class PublicConfideComponent implements OnInit {
     this.confideService.getConfidePublic().subscribe(
       res => {
         this.listConfide = res;
-        console.log(this.listConfide);
       },
       error => {
         console.log(error);
@@ -48,12 +47,12 @@ export class PublicConfideComponent implements OnInit {
     };
     this.confideService.postConfiden(data).subscribe(
       res => {
-        console.log(res);
+       console.log(res);
       },
       error => {
         console.log(error);
       }
     );
-    // window.location.reload();
+    window.location.reload();
   }
 }

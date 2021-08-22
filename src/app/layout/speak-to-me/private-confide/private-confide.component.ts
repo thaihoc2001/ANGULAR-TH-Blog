@@ -40,6 +40,6 @@ export class PrivateConfideComponent implements OnInit {
         console.log(error);
       }
     );
+    window.location.reload();
   }
-
 }
