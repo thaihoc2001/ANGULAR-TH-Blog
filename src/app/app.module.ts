@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
-import { NgxCaptchaModule } from 'ngx-captcha';
+// import { NgxCaptchaModule } from 'ngx-captcha';
 import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
@@ -16,7 +16,6 @@ import {HttpClientModule} from '@angular/common/http';
         AppRoutingModule,
         NgxPageScrollCoreModule,
         NgxPageScrollModule,
-        NgxCaptchaModule,
         HttpClientModule,
     ],
     providers: [],
