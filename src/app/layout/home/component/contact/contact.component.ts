@@ -9,7 +9,7 @@ import { Loader } from '@googlemaps/js-api-loader';
 export class ContactComponent implements OnInit {
 
   constructor() { }
-  title = 'google-maps';
+  // title = 'google-maps';
   ngOnInit(): void {
     // const loader = new Loader({
     //   apiKey: 'AIzaSyA1CUd61iFAYf3Pn4nTMIhVchWX6V2r4B0'

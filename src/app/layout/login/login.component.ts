@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
   constructor(private formBuilder: FormBuilder) { }
 
   infoFormLogin: any;
-  siteKey = '6Ley6SgcAAAAAK05WAQNkkk2VgAdTyI0XKvuqWZs';
+  // siteKey = '6Ley6SgcAAAAAK05WAQNkkk2VgAdTyI0XKvuqWZs';
 
   ngOnInit(): void {
     this.initFormLogin();
@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
     this.infoFormLogin = this.formBuilder.group({
       username: new FormControl('', Validators.required),
       password: new FormControl('', Validators.required),
-      recaptcha: new FormControl('', Validators.required)
+      // recaptcha: new FormControl('', Validators.required)
     });
   }
   onSubmit(): void{
