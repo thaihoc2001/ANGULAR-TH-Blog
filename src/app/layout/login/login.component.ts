@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
   constructor(private formBuilder: FormBuilder) { }
 
   infoFormLogin: any;
-  siteKey = '6LdXfQwcAAAAAKnSjtm4zoS0yPD6-RbDPtYbD1dG';
+  siteKey = '6Ley6SgcAAAAAK05WAQNkkk2VgAdTyI0XKvuqWZs';
 
   ngOnInit(): void {
     this.initFormLogin();
