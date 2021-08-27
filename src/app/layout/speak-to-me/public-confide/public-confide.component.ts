@@ -48,11 +48,15 @@ export class PublicConfideComponent implements OnInit {
     this.confideService.postConfiden(data).subscribe(
       res => {
        console.log(res);
+       console.log('oke');
+       this.reload();
       },
       error => {
         console.log(error);
       }
     );
+  }
+  reload(): void{
     window.location.reload();
   }
 }
