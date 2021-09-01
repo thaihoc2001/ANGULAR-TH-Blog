@@ -2,7 +2,8 @@ import {Injectable} from '@angular/core';
 import {HttpClient, HttpErrorResponse, HttpHeaders, HttpParams, HttpResponse} from '@angular/common/http';
 import {Observable, throwError} from 'rxjs';
 import {catchError} from 'rxjs/operators';
-import * as _ from 'lodash';
+import * as _ from 'lodash-es';
+// import { keys } from 'lodash-es';
 // import {StorageService} from '../storage/storage.service';
 
 @Injectable({
