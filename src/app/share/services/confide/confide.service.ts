@@ -5,7 +5,7 @@ import {Observable} from 'rxjs';
 import {environment} from '../../../../environments/environment';
 import {map} from 'rxjs/operators';
 
-const apiUrl = environment.apiUrl;
+const apiUrl = `${environment.apiUrl}`;
 @Injectable({
   providedIn: 'root'
 })
