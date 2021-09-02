@@ -4,6 +4,9 @@ import {NavbarComponent} from './navbar/navbar.component';
 import {FooterComponent} from './footer/footer.component';
 import {AsideComponent} from './aside/aside.component';
 import {RouterModule} from '@angular/router';
+import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
+import { SidebarAdminComponent } from './sidebar-admin/sidebar-admin.component';
+import {CollapseModule} from 'ngx-bootstrap/collapse';
 
 
 
@@ -11,16 +14,21 @@ import {RouterModule} from '@angular/router';
   declarations: [
     NavbarComponent,
     FooterComponent,
-    AsideComponent
+    AsideComponent,
+    NavbarAdminComponent,
+    SidebarAdminComponent
   ],
   exports: [
     NavbarComponent,
     FooterComponent,
-    AsideComponent
+    AsideComponent,
+    NavbarAdminComponent,
+    SidebarAdminComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    CollapseModule
   ]
 })
 export class ShareUiModule { }
