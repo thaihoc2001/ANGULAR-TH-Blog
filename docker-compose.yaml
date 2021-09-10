@@ -6,5 +6,5 @@ services:
     restart: always
     container_name: thblog-website
     ports:
-      - "80:80"
+      - "4200:80"
       - "443:443"
