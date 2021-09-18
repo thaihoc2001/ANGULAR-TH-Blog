@@ -24,13 +24,15 @@ button{
   height: 50px;
   color: white;
   border-radius: 30px;
-  background-image: linear-gradient(to right,#23bce2, #7277ed, #e416fc);
+  //background-image: linear-gradient(to right,#23bce2, #7277ed, #e416fc);
+  background-color: #242939;
 }
 .outer{
-  background-image: url("../../assets/img/img-content/bg-login.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  //background-image: url("../../assets/img/img-content/bg-login.webp");
+  //background-size: cover;
+  //background-repeat: no-repeat;
+  //background-position: center;
+  background-color: #242939;
   width: 100vw;
   height: 100vh;
 }

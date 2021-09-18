@@ -4,7 +4,6 @@ import {LayoutComponent} from './layout.component';
 import {HomeComponent} from './home/home.component';
 import {ScoreComponent} from './score/score.component';
 import {SoundcloudComponent} from './soundcloud/soundcloud.component';
-import {LoginComponent} from './login/login.component';
 
 const routes: Routes = [
   {
@@ -30,10 +29,6 @@ const routes: Routes = [
       {
         path: 'soundclound',
         component: SoundcloudComponent
-      },
-      {
-        path: 'login',
-        component: LoginComponent
       }
     ]
 

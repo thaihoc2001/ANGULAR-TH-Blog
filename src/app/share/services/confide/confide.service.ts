@@ -10,7 +10,6 @@ const apiUrl = `${environment.apiUrl}`;
   providedIn: 'root'
 })
 export class ConfideService {
-
   constructor( private apiService: ApiService) { }
   postConfiden(data: Confide): Observable<any>{
     const path = `${apiUrl}/confide/send`;

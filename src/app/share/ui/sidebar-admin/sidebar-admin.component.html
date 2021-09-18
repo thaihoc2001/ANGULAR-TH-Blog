@@ -17,20 +17,26 @@
     <ul class="menu-items list-unstyled">
       <li >
         <a routerLink="/home/dashboard" routerLinkActive="active">
-          <i nz-icon nzType="dashboard" nzTheme="outline"></i>
+          <i class="fas fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
       </li>
       <li >
         <a routerLink="/home/employee" routerLinkActive="active">
-          <i nz-icon nzType="usergroup-add" nzTheme="outline"></i>
-          <span>Employee Manager</span>
+          <i class="fas fa-newspaper"></i>
+          <span>Posts Manager</span>
         </a>
       </li>
       <li>
         <a routerLink="/log/logs-visualization" routerLinkActive="active">
-          <i nz-icon nzType="usergroup-add" nzTheme="outline"></i>
-          <span>Manage</span>
+          <i class="fas fa-sms"></i>
+          <span>Messenger</span>
+        </a>
+      </li>
+      <li >
+        <a routerLink="/home/me" routerLinkActive="active" >
+          <i class="fas fa-user-plus"></i>
+          <span>Register</span>
         </a>
       </li>
     </ul>
@@ -40,13 +46,13 @@
     <ul class="menu-items list-unstyled ">
       <li >
         <a routerLink="/home/me" routerLinkActive="active" >
-          <i nz-icon nzType="user" nzTheme="outline"></i>
+          <i class="fas fa-user"></i>
           <span>Profile</span>
         </a>
       </li>
       <li>
         <a class="">
-          <i nz-icon nzType="logout" nzTheme="outline"></i>
+          <i class="fas fa-sign-out-alt"></i>
           <span (click)="logout()">
             Logout
           </span>

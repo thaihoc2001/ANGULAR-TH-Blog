@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
-import {ConfideService} from '../../../share/services/confide/confide.service';
 import {Confide} from '../../../share/model/confide.model';
+import {ConfideService} from '../../../share/services/confide/confide.service';
 
 @Component({
   selector: 'app-public-confide',
@@ -35,7 +35,6 @@ export class PublicConfideComponent implements OnInit {
       }
     );
   }
-  // tslint:disable-next-line:typedef
   get f() {
     return this.infoFormPublicCofide.controls;
   }

@@ -8,7 +8,6 @@ import { ContactComponent } from './home/component/contact/contact.component';
 import { TalkToMeComponent } from './home/component/talk-to-me/talk-to-me.component';
 import { WhoAmIComponent } from './home/component/who-am-i/who-am-i.component';
 import { ScoreComponent } from './score/score.component';
-import { LoginComponent } from './login/login.component';
 import { SoundcloudComponent } from './soundcloud/soundcloud.component';
 import {ReactiveFormsModule} from '@angular/forms';
 // import {NgxCaptchaModule} from 'ngx-captcha';
@@ -26,7 +25,6 @@ import {LayoutComponent} from './layout.component';
     TalkToMeComponent,
     WhoAmIComponent,
     ScoreComponent,
-    LoginComponent,
     SoundcloudComponent
   ],
   imports: [
