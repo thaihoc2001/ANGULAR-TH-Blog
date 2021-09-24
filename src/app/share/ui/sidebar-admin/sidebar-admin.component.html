@@ -16,7 +16,7 @@
     </div>
     <ul class="menu-items list-unstyled">
       <li >
-        <a routerLink="/home/dashboard" routerLinkActive="active">
+        <a routerLink="/admin/home" routerLinkActive="active">
           <i class="fas fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
@@ -28,7 +28,7 @@
         </a>
       </li>
       <li>
-        <a routerLink="/log/logs-visualization" routerLinkActive="active">
+        <a routerLink="/admin/messenger" routerLinkActive="active">
           <i class="fas fa-sms"></i>
           <span>Messenger</span>
         </a>
@@ -51,9 +51,9 @@
         </a>
       </li>
       <li>
-        <a class="">
+        <a class="" (click)="logout()">
           <i class="fas fa-sign-out-alt"></i>
-          <span (click)="logout()">
+          <span>
             Logout
           </span>
         </a>

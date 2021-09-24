@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators, FormBuilder} from '@angular/forms';
-import {ConfideService} from '../../../share/services/confide/confide.service';
+import {MessengerService} from '../../../share/services/messenger/messenger.service';
 
 @Component({
   selector: 'app-private-confide',
@@ -11,7 +11,7 @@ export class PrivateConfideComponent implements OnInit {
   infoFormPrivateCofide: any;
 
   constructor(private formBuilder: FormBuilder,
-              private confideService: ConfideService) { }
+              private messengerService: MessengerService) { }
 
   ngOnInit(): void {
     this.initForm();
@@ -27,12 +27,13 @@ export class PrivateConfideComponent implements OnInit {
     return this.infoFormPrivateCofide.controls;
   }
   onSubmit(): void{
+    const sd = new Date();
     const data = {
-      name: this.f.name.value,
+      fullname: this.f.name.value,
       message: this.f.message.value,
-      type: 'private',
+      sendDate: sd
     };
-    this.confideService.postConfiden(data).subscribe(
+    this.messengerService.postMessenger(data).subscribe(
       res => {
         console.log(res);
       },

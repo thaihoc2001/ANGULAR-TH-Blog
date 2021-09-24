@@ -3,6 +3,7 @@ import {HttpClient, HttpErrorResponse, HttpHeaders, HttpParams, HttpResponse} fr
 import {Observable, throwError} from 'rxjs';
 import {catchError} from 'rxjs/operators';
 import * as _ from 'lodash-es';
+import {TokenStorageService} from '../auth/token-storage.service';
 // import { keys } from 'lodash-es';
 // import {StorageService} from '../storage/storage.service';
 
@@ -12,14 +13,14 @@ import * as _ from 'lodash-es';
 export class ApiService {
 
   constructor(private httpClient: HttpClient,
-              // private storageService: StorageService
+              private storageService: TokenStorageService
   ) {
   }
 
 
   public setHeaders(headers?: any): HttpHeaders {
-    // const token = 'Bearer ' + this.storageService.getToken();
-    const token = '';
+    const token = 'Bearer ' + this.storageService.getToken();
+    // const token = '';
     let httpHeaders;
 
     if (token) {
@@ -39,8 +40,8 @@ export class ApiService {
 
 
   public setUrlEncodedHeaders(headers?: any): HttpHeaders {
-    // const token = 'Bearer ' + this.storageService.getToken();
-    const token = '';
+    const token = 'Bearer ' + this.storageService.getToken();
+    // const token = '';
     let httpHeaders;
 
     if (token) {

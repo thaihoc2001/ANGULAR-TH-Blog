@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PublicConfideComponent } from './public-confide.component';
+import { MessengerComponent } from './messenger.component';
 
-describe('PublicConfideComponent', () => {
-  let component: PublicConfideComponent;
-  let fixture: ComponentFixture<PublicConfideComponent>;
+describe('MessengerComponent', () => {
+  let component: MessengerComponent;
+  let fixture: ComponentFixture<MessengerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PublicConfideComponent ]
+      declarations: [ MessengerComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PublicConfideComponent);
+    fixture = TestBed.createComponent(MessengerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
