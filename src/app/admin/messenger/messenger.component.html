@@ -1,1 +1,11 @@
-<p>messenger works!</p>
+<div class="w-100">
+  <h3 class="mt-2 text-uppercase">Danh sách tin nhắn</h3>
+  <div *ngFor="let item of messenger">
+    <div class="bg-light mt-5">
+      <h6>{{item.name}}</h6>
+      <i>{{item.sendDate | date: 'dd/MM/yyyy'}}</i>
+      <p>{{item.phone}}</p>
+      <p>{{item.contactContent}}</p>
+    </div>
+  </div>
+</div>

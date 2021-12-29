@@ -5,7 +5,6 @@ import { AdminComponent } from './admin.component';
 import {ShareUiModule} from '../share/ui/share-ui.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {CollapseModule} from 'ngx-bootstrap/collapse';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MessengerComponent } from './messenger/messenger.component';
 import {MessageState} from '../share/state/message/message.state';
 

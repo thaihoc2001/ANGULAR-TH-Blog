@@ -10,17 +10,21 @@ import {MessengerService} from '../../share/services/messenger/messenger.service
   styleUrls: ['./messenger.component.scss']
 })
 export class MessengerComponent implements OnInit {
-  private messenger: Messenger | undefined;
-  constructor(private messageState: MessageState,
-              private messengerService: MessengerService) { }
+  messenger: Messenger[] = [];
+  constructor(private messageState: MessageState) { }
 
   ngOnInit(): void {
     this.listenStateEvent();
   }
   listenStateEvent(): void {
-    this.messageState.packageSelected$.subscribe(res => {
-      this.messenger = res;
+    this.messageState.packageSelected$.subscribe(res => this.initMessenger());
+  }
+
+  private initMessenger(): void {
+    const mes = this.messageState.getListMessenger();
+    if (mes){
+      this.messenger = mes;
       console.log(this.messenger);
-    });
+    }
   }
 }

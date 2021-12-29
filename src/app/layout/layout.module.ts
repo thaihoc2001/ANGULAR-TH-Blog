@@ -7,13 +7,16 @@ import { WorkComponent } from './home/component/work/work.component';
 import { ContactComponent } from './home/component/contact/contact.component';
 import { TalkToMeComponent } from './home/component/talk-to-me/talk-to-me.component';
 import { WhoAmIComponent } from './home/component/who-am-i/who-am-i.component';
-import { ScoreComponent } from './score/score.component';
 import { SoundcloudComponent } from './soundcloud/soundcloud.component';
 import {ReactiveFormsModule} from '@angular/forms';
-// import {NgxCaptchaModule} from 'ngx-captcha';
 import { RouterModule } from '@angular/router';
 import {ShareUiModule} from '../share/ui/share-ui.module';
 import {LayoutComponent} from './layout.component';
+import { PostsComponent } from './posts/posts.component';
+import { ContactWorkComponent } from './contact-work/contact-work.component';
+import { CurriculumVitaeComponent } from './curriculum-vitae/curriculum-vitae.component';
+import {MessageState} from '../share/state/message/message.state';
+
 
 
 @NgModule({
@@ -24,8 +27,10 @@ import {LayoutComponent} from './layout.component';
     ContactComponent,
     TalkToMeComponent,
     WhoAmIComponent,
-    ScoreComponent,
-    SoundcloudComponent
+    SoundcloudComponent,
+    PostsComponent,
+    ContactWorkComponent,
+    CurriculumVitaeComponent
   ],
   imports: [
     CommonModule,
@@ -34,6 +39,9 @@ import {LayoutComponent} from './layout.component';
     ReactiveFormsModule,
     RouterModule,
     ShareUiModule
+  ],
+  providers: [
+    MessageState
   ]
 })
 export class LayoutModule { }

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PrivateConfideComponent } from './private-confide.component';
+import { ContactWorkComponent } from './contact-work.component';
 
-describe('PrivateConfideComponent', () => {
-  let component: PrivateConfideComponent;
-  let fixture: ComponentFixture<PrivateConfideComponent>;
+describe('ContactWorkComponent', () => {
+  let component: ContactWorkComponent;
+  let fixture: ComponentFixture<ContactWorkComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PrivateConfideComponent ]
+      declarations: [ ContactWorkComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PrivateConfideComponent);
+    fixture = TestBed.createComponent(ContactWorkComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

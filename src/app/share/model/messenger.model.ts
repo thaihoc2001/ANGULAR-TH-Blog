@@ -1,5 +1,6 @@
 export interface Messenger{
-  fullname: string;
-  message: string;
+  name: string;
+  phone: string;
+  contactContent: string;
   sendDate: Date;
 }

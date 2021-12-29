@@ -10,7 +10,7 @@ export class MessageState implements OnDestroy{
   public isReady$ = this.isReadySubject.asObservable();
 
   // @ts-ignore
-  private messengerSubject = new BehaviorSubject<Messenger>(null);
+  private messengerSubject = new BehaviorSubject<Messenger[]>(null);
   public packageSelected$ = this.messengerSubject.asObservable();
 
   subscription: Subscription = new Subscription();
@@ -19,20 +19,29 @@ export class MessageState implements OnDestroy{
   }
   loadMessenger(): void{
     this.setIsReady(false);
-    const ms = this.messengerService.getMessenger().pipe(
+    const ms = this.messengerService.getListMessenger().pipe(
       tap(messenger => this.messengerSubject.next(messenger)),
       catchError(async (error) => null),
       finalize(() => this.setIsReady(true))
     ).subscribe();
     this.subscription.add(ms);
   }
+  sendMesenger(messenger: Messenger): Observable<any>{
+    return this.messengerService.postMessenger(messenger).pipe(
+      finalize(() => this.setIsReady(true))
+    );
+  }
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
   }
-  setIsReady(isReady: boolean) {
+  setIsReady(isReady: boolean): void{
     this.isReadySubject.next(isReady);
   }
-  setPackageSelected(messenger: Messenger): void {
+  setPackageSelected(messenger: Messenger[]): void {
     return this.messengerSubject.next(messenger);
+  }
+  getListMessenger(): Messenger[] {
+    // @ts-ignore
+    return this.messengerSubject.getValue();
   }
 }

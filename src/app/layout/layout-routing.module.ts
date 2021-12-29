@@ -2,8 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {LayoutComponent} from './layout.component';
 import {HomeComponent} from './home/home.component';
-import {ScoreComponent} from './score/score.component';
 import {SoundcloudComponent} from './soundcloud/soundcloud.component';
+import {PostsComponent} from './posts/posts.component';
+import {ContactComponent} from './home/component/contact/contact.component';
+import {ContactWorkComponent} from './contact-work/contact-work.component';
+import {CurriculumVitaeComponent} from './curriculum-vitae/curriculum-vitae.component';
 
 const routes: Routes = [
   {
@@ -19,16 +22,20 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
-        path: 'speak-to-me',
-        loadChildren: () => import('./speak-to-me/speak-to-me.module').then(m => m.SpeakToMeModule)
-      },
-      {
-        path: 'score',
-        component: ScoreComponent
-      },
-      {
         path: 'soundclound',
         component: SoundcloudComponent
+      },
+      {
+        path: 'posts',
+        component: PostsComponent
+      },
+      {
+        path: 'contact-work',
+        component: ContactWorkComponent
+      },
+      {
+        path: 'curriculum-vitae',
+        component: CurriculumVitaeComponent
       }
     ]
 

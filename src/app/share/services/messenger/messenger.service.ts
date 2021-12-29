@@ -13,10 +13,16 @@ export class MessengerService {
 
   constructor(private apiService: ApiService) { }
   postMessenger(data: Messenger): Observable<any>{
-    const path = `${apiUrl}/confide/send`;
+    const path = `${apiUrl}/messenger/send`;
     return this.apiService.post(path, data);
   }
   getMessenger(): Observable<Messenger>{
+    const path = `${apiUrl}/messenger`;
+    return this.apiService.get(path).pipe(
+      map(res => res.body)
+    );
+  }
+  getListMessenger(): Observable<Array<Messenger>>{
     const path = `${apiUrl}/messenger`;
     return this.apiService.get(path).pipe(
       map(res => res.body)

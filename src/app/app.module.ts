@@ -7,6 +7,7 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
 import {HttpClientModule} from '@angular/common/http';
 import {CollapseModule} from 'ngx-bootstrap/collapse';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     NgxPageScrollModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    CollapseModule
+    CollapseModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
